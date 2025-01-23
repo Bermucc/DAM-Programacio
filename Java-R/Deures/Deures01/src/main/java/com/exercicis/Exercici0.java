@@ -74,8 +74,20 @@ public class Exercici0 {
      * @test ./runTest.sh "com.exercicis.TestExercici0#testValidarNom"
      */
     public static boolean validarNom(String nom) {
-        // TODO
-        return false;
+        nom = nom.trim().toLowerCase(); 
+
+        if (nom.isEmpty()) {
+            return false;
+        }
+
+        String caractersAcceptats = " abcdefghijklmnopqrstuvwxyzàáèéìíòóùúäëïöüç";
+
+        for (char car : nom.toCharArray()) {
+            if (caractersAcceptats.indexOf(car) == -1) {
+                return false;
+            }
+        }
+        return true;
     }
     
     /**
@@ -89,8 +101,8 @@ public class Exercici0 {
      * @test ./runTest.sh "com.exercicis.TestExercici0#testValidarEdat"
      */
     public static boolean validarEdat(int edat) {
-        // TODO
-        return false;
+
+        return (edat >= 18 && edat <= 100); 
     }
 
     /**
@@ -111,7 +123,16 @@ public class Exercici0 {
      * @test ./runTest.sh "com.exercicis.TestExercici0#testValidarFactors"
      */
     public static boolean validarFactors(String[] factors) {
-        // TODO
+        if (factors != null && factors.length == 2){
+            String tipus = factors[0];
+            String risc = factors[1];
+
+            if ("autònom".equals(tipus) && "risc baix".equals(risc)) {
+                return false;
+            }
+            return ("autonom".equals(tipus) || "empresa".equals(tipus) && 
+            "risc alt".equals(risc) || "risc mitja".equals(risc) || "risc baix".equals(risc));
+        }
         return false;
     }
 
@@ -131,8 +152,7 @@ public class Exercici0 {
      * @test ./runTest.sh "com.exercicis.TestExercici0#testValidarDescompte"
      */
     public static boolean validarDescompte(double descompte) {
-        // TODO
-        return false;
+        return (descompte >= 0 && descompte <= 20);
     }
 
     /**
