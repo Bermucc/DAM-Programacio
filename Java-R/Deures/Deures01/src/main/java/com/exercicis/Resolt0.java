@@ -287,6 +287,7 @@ public class Resolt0 {
         }
     
         // Verifica si els guions es troben a les posicions correctes
+        // AAAA-MM-DD
         if (data.charAt(4) != '-' || data.charAt(7) != '-') {
             return false;
         }
