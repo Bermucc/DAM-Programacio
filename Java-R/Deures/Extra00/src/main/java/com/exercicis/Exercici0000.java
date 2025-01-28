@@ -23,7 +23,10 @@ public class Exercici0000 {
      * @param String el segon número imaginari
      * @return String el resultat de la suma
      */
-    private String addImaginaries(String num0, String num1) {
+    
+    private static String addImaginaries(String num0, String num1) {
+        String 
+
         return "";
     }
 
@@ -33,6 +36,22 @@ public class Exercici0000 {
      * @param int nivells del triangle (0 fins a n)
      */
     private void drawPascal(int n) {
+        ArrayList tabla1 = new ArrayList<>();
+        ArrayList tabla2 = new ArrayList<>();
+
+        tabla1.add(1);
+        tabla2.add(1,1);
+        
+        int valor1 = tabla2.indexOf(0);
+        int valor2 = tabla2.indexOf(1);
+        int nuevoValor = valor1 + valor2;
+        
+
+        for (n){
+            
+            ArrayList tabla = new ArrayList<>(Arrays.asList(1,nuevoValor,1));
+            tabla.add(1,nuevoValor,1);
+        }
 
     }
 
