@@ -3,6 +3,7 @@ package com.exercicis;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.lang.Iterable;
 
 public class Exercici0000 {
     public static void main(String[] args) {
@@ -25,7 +26,7 @@ public class Exercici0000 {
      */
     
     private static String addImaginaries(String num0, String num1) {
-        String 
+         
 
         return "";
     }
@@ -36,6 +37,8 @@ public class Exercici0000 {
      * @param int nivells del triangle (0 fins a n)
      */
     private void drawPascal(int n) {
+        ArrayList<ArrayList<Integer>> pascal = new ArrayList<>();
+        //pascal.add(New ArrayList<>(List.of(1)));
         ArrayList tabla1 = new ArrayList<>();
         ArrayList tabla2 = new ArrayList<>();
 
@@ -47,12 +50,6 @@ public class Exercici0000 {
         int nuevoValor = valor1 + valor2;
         
 
-        for (n){
-            
-            ArrayList tabla = new ArrayList<>(Arrays.asList(1,nuevoValor,1));
-            tabla.add(1,nuevoValor,1);
-        }
-
     }
 
     /**
@@ -61,19 +58,39 @@ public class Exercici0000 {
      * @param llista de valors
      * @return resultat de la suma
      */
-    private double addList(ArrayList<Double> list) {
-        return 0.0;
+    private static double addList(ArrayList<Double> list) {
+        Double sumaTotal = 0.0;
+
+        for (int i = 0; i < list.size(); i++) {
+            sumaTotal =+ list.get(i);
+        }
+        return sumaTotal;
+        
     }
 
     /** 
      * Fes una funció que dibuixi els valors d'una matriu
      * int[][] entrada = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
-     * 
      * @param int[][] matriu a dibuixar
      */
     public static void printMatrix(int[][] matrix) {
-    }
 
+        int[][] entrada = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+
+        for (int contFila = 0; contFila < matrix.length; contFila++){
+            for (int contColumna = 0; contColumna < matrix.length; contColumna++) {
+                System.out.println(matrix[contFila][contColumna]);
+
+                if (contColumna != (matrix[contFila].length)-1) {
+                    System.out.println(matrix[contFila][contColumna] + ",");
+                } else {
+                    System.out.println(matrix[contFila][contColumna]);
+                }
+
+            }
+        }
+    }
+        
     /**
      * Fes una funció que retorni la trasposada d'una matriu
      * 
@@ -98,6 +115,12 @@ public class Exercici0000 {
      * @return int[][] matriu transposada
      */
     public static int[][] transpose(int[][] matrix) {
+
+        for (int contFila = 0; contFila < matrix.length; contFila++) {
+            for (int contColumna = 0; contColumna < matrix.length; contColumna++) {
+                
+            }
+        }
         return null;
     }
 
@@ -128,6 +151,14 @@ public class Exercici0000 {
      * @return char primer caràcter que no es repeteix
      */
     public static char firstNonRepeated(String str) {
+        str = str.trim().toLowerCase();
+        
+        
+        
+        for (char c : str) {
+            str.toCharArray();
+            
+        }
         return 'a';
     }
 
