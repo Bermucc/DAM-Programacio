@@ -152,14 +152,11 @@ public class Exercici0000 {
      */
     public static char firstNonRepeated(String str) {
         str = str.trim().toLowerCase();
+        char c;
+        return c;
         
         
         
-        for (char c : str) {
-            str.toCharArray();
-            
-        }
-        return 'a';
     }
 
     /**
@@ -170,6 +167,9 @@ public class Exercici0000 {
      * @return int número resultant
      */
     public static int inverInt(int num) {
+        int[] numero = {num};
+        numero.indexOf(0);
+        for (int i = 0; i < numero.length(); i++)
         return 0;
     }
 
